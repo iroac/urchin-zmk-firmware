@@ -45,14 +45,6 @@
             flavor = "tap-preferred";
             bindings = <&kp>, <&kp>;
         };
-
-        td2: tapdance2 {
-            compatible = "zmk,behavior-tap-dance";
-            label = "TAPDANCE2";
-            #binding-cells = <2>;
-            tapping-term-ms = <150>;
-            bindings = <&kp>, <&kp>;
-        };
     };
 
     keymap {
@@ -62,8 +54,17 @@
             bindings = <
 &kp Q           &kp W           &kp E               &kp R             &kp T          &kp Y      &kp U              &kp I                 &td MINUS O      &kp P
 &hm LEFT_GUI A  &hm LEFT_ALT S  &hm LEFT_CONTROL D  &hm LEFT_SHIFT F  &kp G          &kp H      &hm RIGHT_SHIFT J  &hm RIGHT_CONTROL K   &hm RIGHT_ALT L  &hm RIGHT_GUI SEMICOLON
-&kp Z           &kp X           &kp C               &kp V             &td ESC B      &kp N      &kp M              &td UNDERSCORE COMMA  &td EXCL DOT     &kp SLASH
+&kp Z           &kp X           &kp C               &td ESC V         &kt B          &kp N      &kp M              &td UNDERSCORE COMMA  &td EXCL DOT     &kp SLASH
                                                     &mt TAB SPACE     &kp BACKSPACE  &kp ENTER  &to 1
+            >;
+        };
+
+        nav {
+            bindings = <
+&trans             &trans           &trans          &trans           &trans          &kp K_AGAIN  &mkp RCLK       &mmv MOVE_DOWN  &mmv MOVE_UP  &mkp LCLK
+&kp K_SCROLL_DOWN  &kp K_SCROLL_UP  &mmv MOVE_LEFT  &mmv MOVE_RIGHT  &kp DEL         &kp CAPS     &kp LEFT_ARROW  &kp DOWN        &kp UP_ARROW  &kp RIGHT
+&trans             &trans           &trans          &trans           &trans          &kp INSERT   &kp HOME        &kp PAGE_DOWN   &kt PAGE_UP   &kp END
+                                                    &to 0            &kp LEFT_SHIFT  &sk RALT     &to 2
             >;
         };
 
@@ -72,16 +73,7 @@
 &kp ESC    &kp AMPERSAND    &kp ASTERISK  &kp PLUS   &kp SINGLE_QUOTE   &kp LEFT_BRACE        &kp LS(AMPERSAND)  &kp LS(ASTERISK)  &kp RIGHT_BRACE        &kp DELETE
 &kp TAB    &kp DOLLAR       &kp PERCENT   &kp EQUAL  &kp DOUBLE_QUOTES  &kp LEFT_BRACKET      &kp BACKSLASH      &kp SLASH         &kp RIGHT_BRACKET      &kp ENTER
 &kp TILDE  &kp EXCLAMATION  &kp AT_SIGN   &kp HASH   &kp GRAVE          &kp LEFT_PARENTHESIS  &kp MINUS          &kp PIPE          &kp RIGHT_PARENTHESIS  &to 3
-                                          &to 0      &kp LSHIFT         &sk RALT              &to 2
-            >;
-        };
-
-        nav {
-            bindings = <
-&trans             &trans           &trans          &trans           &trans          &kp K_AGAIN  &mkp RCLK       &mmv MOVE_DOWN  &mmv MOVE_UP  &mkp LCLK
-&kp K_SCROLL_DOWN  &kp K_SCROLL_UP  &mmv MOVE_LEFT  &mmv MOVE_RIGHT  &kp DEL         &kp CAPS     &kp LEFT_ARROW  &kp DOWN        &kp UP_ARROW  &kp RIGHT
-&to 1              &trans           &trans          &trans           &trans          &kp INSERT   &kp HOME        &kp PAGE_DOWN   &kt PAGE_UP   &kp END
-                                                    &to 0            &kp LEFT_SHIFT  &sk RALT     &to 3
+                                          &to 0      &kp LSHIFT         &sk RALT              &to 1
             >;
         };
 
