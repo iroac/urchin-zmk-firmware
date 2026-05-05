@@ -30,8 +30,6 @@
             #binding-cells = <2>;
             tapping-term-ms = <200>;
             quick-tap-ms = <0>;
-            require-prior-idle-ms = <150>;
-            hold-trigger-on-release;
             flavor = "tap-preferred";
             bindings = <&kp>, <&kp>;
         };
@@ -51,7 +49,7 @@
             label = "DOUBLETAP";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
-            bindings = <&kp N1>, <&kp N2>;
+            bindings = <&kp V>, <&kp ESC>;
         };
     };
 
@@ -62,7 +60,7 @@
             bindings = <
 &kp Q           &kp W           &kp E               &kp R             &kp T          &kp Y      &kp U              &kp I                 &td MINUS O      &kp P
 &hm LEFT_GUI A  &hm LEFT_ALT S  &hm LEFT_CONTROL D  &hm LEFT_SHIFT F  &kp G          &kp H      &hm RIGHT_SHIFT J  &hm RIGHT_CONTROL K   &hm RIGHT_ALT L  &hm RIGHT_GUI SEMICOLON
-&kp Z           &kp X           &kp C               &td ESC V         &kt B          &kp N      &kp M              &td UNDERSCORE COMMA  &td EXCL DOT     &kp SLASH
+&kp Z           &kp X           &kp C               &tb2              &kt B          &kp N      &kp M              &td UNDERSCORE COMMA  &td EXCL DOT     &kp SLASH
                                                     &mt TAB SPACE     &kp BACKSPACE  &kp ENTER  &to 1
             >;
         };
