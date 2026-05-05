@@ -46,12 +46,12 @@
             bindings = <&kp>, <&kp>;
         };
 
-        dt: doubletap {
+        tb2: doubletap {
             compatible = "zmk,behavior-tap-dance";
             label = "DOUBLETAP";
-            #binding-cells = <2>;
+            #binding-cells = <0>;
             tapping-term-ms = <200>;
-            bindings = <&kp>, <&kp>;
+            bindings = <&kp N1>, <&kp N2>;
         };
     };
 
