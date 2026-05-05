@@ -16,8 +16,8 @@
 };
 
 &mmv {
-    time-to-max-speed-ms = <200>;
-    acceleration-exponent = <2>;
+    time-to-max-speed-ms = <0>;
+    acceleration-exponent = <5>;
 };
 
 &sk { ignore-modifiers; };
@@ -59,7 +59,7 @@
         home {
             bindings = <
 &kp Q           &kp W           &kp E               &kp R             &kp T          &kp Y      &kp U              &kp I                 &td MINUS O      &kp P
-&hm LEFT_GUI A  &hm LEFT_ALT S  &hm LEFT_CONTROL D  &hm LEFT_SHIFT F  &kp G          &kp H      &hm RIGHT_SHIFT J  &hm RIGHT_CONTROL K   &hm RIGHT_ALT L  &hm RIGHT_GUI SEMICOLON
+&td LEFT_GUI A  &td LEFT_ALT S  &hm LEFT_CONTROL D  &td LEFT_SHIFT F  &kp G          &kp H      &td RIGHT_SHIFT J  &td RIGHT_CONTROL K   &td RIGHT_ALT L  &td LMETA SEMICOLON
 &kp Z           &kp X           &kp C               &tb2              &kt B          &kp N      &kp M              &td UNDERSCORE COMMA  &td EXCL DOT     &kp SLASH
                                                     &mt TAB SPACE     &kp BACKSPACE  &kp ENTER  &to 1
             >;
