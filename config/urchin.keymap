@@ -21,7 +21,7 @@
     acceleration-exponent = <10>;
 };
 
-&sk { iegnore-modifiers; };
+&sk { ignore-modifiers; };
 
 / {
     behaviors {
