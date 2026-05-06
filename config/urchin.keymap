@@ -93,8 +93,8 @@
     combos {
         compatible = "zmk,combos";
 
-        combo_esc {
-            bindings = <&kp ESCAPE>;
+        combo_space {
+            bindings = <&kp SPACE>;
             key-positions = <31 30>;
         };
 
@@ -110,8 +110,8 @@
             layers = <0 1>;
         };
 
-        combo_space {
-            bindings = <&kp SPACE>;
+        combo_esc {
+            bindings = <&kp ESCAPE>;
             key-positions = <2 1>;
         };
     };
@@ -121,10 +121,10 @@
 
         home {
             bindings = <
-&kp Q            &kp W            &kp E                &kp R              &kp T               &kp Y          &kp U               &kp I                 &td MINUS O       &kp P
-&hml LEFT_GUI A  &hml LEFT_ALT S  &hml LEFT_CONTROL D  &hml LEFT_SHIFT F  &kp G               &kp H          &hmr RIGHT_SHIFT J  &hmr RIGHT_CONTROL K  &hmr RIGHT_ALT L  &hmr RIGHT_WIN SEMICOLON
-&zdel            &kp X            &kp C                &vbs               &kp B               &kp N          &mesc               &td UNDERSCORE COMMA  &td EXCL DOT      &kp SLASH
-                                                       &kp SPACE          &td LEFT_SHIFT TAB  &kp BACKSPACE  &to 1
+&kp Q            &kp W            &kp E                &kp R              &kp T               &kp Y                      &kp U               &kp I                 &td MINUS O       &td SINGLE_QUOTE P
+&hml LEFT_GUI A  &hml LEFT_ALT S  &hml LEFT_CONTROL D  &hml LEFT_SHIFT F  &kp G               &kp H                      &hmr RIGHT_SHIFT J  &hmr RIGHT_CONTROL K  &hmr RIGHT_ALT L  &hmr RIGHT_WIN SEMICOLON
+&kp Z            &kp X            &kp C                &kp V              &kp B               &kp N                      &kp M               &td UNDERSCORE COMMA  &td EXCL DOT      &td DOUBLE_QUOTES SLASH
+                                                       &kp SPACE          &td LEFT_SHIFT TAB  &td RIGHT_SHIFT BACKSPACE  &to 1
             >;
         };
 
@@ -139,19 +139,19 @@
 
         symb {
             bindings = <
-&kp ESC  &kp AMPERSAND    &kp ASTERISK  &kp PLUS   &kp SINGLE_QUOTE      &kp LEFT_BRACE        &kp LS(AMPERSAND)  &kp LS(ASTERISK)  &kp RIGHT_BRACE        &kp DELETE
-&kp TAB  &kp DOLLAR       &kp PERCENT   &kp EQUAL  &kp DOUBLE_QUOTES     &kp LEFT_BRACKET      &kp BACKSLASH      &kp SLASH         &kp RIGHT_BRACKET      &kp ENTER
-&to 1    &kp EXCLAMATION  &kp AT_SIGN   &kp HASH   &kp GRAVE             &kp LEFT_PARENTHESIS  &kp MINUS          &kp PIPE          &kp RIGHT_PARENTHESIS  &kp TILDE
-                                        &to 0      &td LSHIFT BACKSPACE  &td RALT BACKSPACE    &to 3
+&kp ESC  &kp AMPERSAND    &kp ASTERISK  &kp PLUS   &kp SINGLE_QUOTE  &kp LEFT_BRACE             &kp LS(AMPERSAND)  &kp LS(ASTERISK)  &kp RIGHT_BRACE        &kp DELETE
+&kp TAB  &kp DOLLAR       &kp PERCENT   &kp EQUAL  &kp PLUS          &kp LEFT_BRACKET           &kp BACKSLASH      &kp SLASH         &kp RIGHT_BRACKET      &kp ENTER
+&to 1    &kp EXCLAMATION  &kp AT_SIGN   &kp HASH   &kp GRAVE         &kp LEFT_PARENTHESIS       &kp MINUS          &kp PIPE          &kp RIGHT_PARENTHESIS  &kp TILDE
+                                        &to 0      &kp MINUS         &td RIGHT_SHIFT BACKSPACE  &to 3
             >;
         };
 
         configNum {
             bindings = <
-&kp C_VOLUME_UP    &kp N7        &kp NUMBER_8  &kp NUMBER_9  &kp LS(MINUS)             &kp F12    &kp F7  &kp F8  &kp F9  &kp K_PLAY_PAUSE
-&kp C_VOLUME_DOWN  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp LS(EQUAL)             &kp F11    &kp F4  &kp F5  &kp F6  &kp K_MUTE
-&to 2              &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp DOT                   &kp F10    &kp F1  &kp F2  &kp F3  &kp C_PAUSE
-                                               &to 0         &td LEFT_SHIFT BACKSPACE  &kp SPACE  &to 4
+&kp C_VOLUME_UP    &kp N7        &kp NUMBER_8  &kp NUMBER_9  &kp LS(MINUS)     &kp F12                   &kp F7  &kp F8  &kp F9  &kp K_PLAY_PAUSE
+&kp C_VOLUME_DOWN  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp LS(EQUAL)     &kp F11                   &kp F4  &kp F5  &kp F6  &kp K_MUTE
+&to 2              &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp DOT           &kp F10                   &kp F1  &kp F2  &kp F3  &kp C_PAUSE
+                                               &to 0         &kp LEFT_CONTROL  &td LEFT_SHIFT BACKSPACE  &to 4
             >;
         };
 
