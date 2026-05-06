@@ -20,7 +20,7 @@
 
 &mmv {
     time-to-max-speed-ms = <0>;
-    acceleration-exponent = <6>;
+    acceleration-exponent = <2>;
 };
 
 &sk { ignore-modifiers; };
@@ -79,8 +79,8 @@
         home {
             bindings = <
 &kp Q  &kp W  &kp E  &kp R      &kp T               &kp Y      &kp U  &kp I                 &td MINUS O   &kp P
-&kt A  &kt S  &kt D  &kt F      &kp G               &kp H      &kp J  &kp K                 &kp L         &kp SEMICOLON
-&kp Z  &kp X  &kp C  &kp V      &kt B               &kp N      &kp M  &td UNDERSCORE COMMA  &td EXCL DOT  &kp SLASH
+&kp A  &kp S  &kp D  &kp F      &kp G               &kp H      &kp J  &kp K                 &kp L         &kp SEMICOLON
+&kp Z  &kp X  &kp C  &kp V      &kp B               &kp N      &kp M  &td UNDERSCORE COMMA  &td EXCL DOT  &kp SLASH
                      &kp SPACE  &td LEFT_SHIFT TAB  &kp ENTER  &to 1
             >;
         };
