@@ -88,7 +88,7 @@
             bindings = <
 &kp Q            &kp W            &kp E                &kp R              &kp T               &kp Y      &kp U               &kp I                 &td MINUS O       &kp P
 &hml LEFT_GUI A  &hml LEFT_ALT S  &hml LEFT_CONTROL D  &hml LEFT_SHIFT F  &kp G               &kp H      &hmr RIGHT_SHIFT J  &hmr RIGHT_CONTROL K  &hmr RIGHT_ALT L  &hmr RIGHT_WIN SEMICOLON
-&kp Z            &kp X            &kp C                &vesc               &kp B               &kp N      &mbk                &td UNDERSCORE COMMA  &td EXCL DOT      &kp SLASH
+&kp Z            &kp X            &kp C                &vesc              &kp B               &kp N      &mbk                &td UNDERSCORE COMMA  &td EXCL DOT      &kp SLASH
                                                        &kp SPACE          &td LEFT_SHIFT TAB  &kp ENTER  &to 1
             >;
         };
@@ -96,8 +96,8 @@
         nav {
             bindings = <
 &trans          &trans        &msc SCRL_LEFT    &msc SCRL_RIGHT  &trans                    &kp K_AGAIN       &mkp LCLK       &mmv MOVE_DOWN  &mmv MOVE_UP  &mkp RCLK
-&kt LEFT_WIN    &kt LEFT_ALT  &kt LEFT_CONTROL  &kt LEFT_SHIFT   &kp DEL                   &kp CAPS          &kp LEFT_ARROW  &kp DOWN        &kp UP_ARROW  &kp RIGHT
-&msc SCRL_DOWN  &msc SCRL_UP  &mmv MOVE_LEFT    &mmv MOVE_RIGHT  &trans                    &kp INSERT        &kp HOME        &kp PAGE_DOWN   &kt PAGE_UP   &kp END
+&kp LEFT_WIN    &kp LEFT_ALT  &kp LEFT_CONTROL  &kt LEFT_SHIFT   &kp DEL                   &kp CAPS          &kp LEFT_ARROW  &kp DOWN        &kp UP_ARROW  &kp RIGHT
+&msc SCRL_DOWN  &msc SCRL_UP  &mmv MOVE_LEFT    &mmv MOVE_RIGHT  &trans                    &kp INSERT        &kp HOME        &kp PAGE_DOWN   &kp PAGE_UP   &kp END
                                                 &to 0            &td LEFT_SHIFT BACKSPACE  &sk LEFT_CONTROL  &to 2
             >;
         };
