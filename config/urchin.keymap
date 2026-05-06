@@ -86,7 +86,7 @@
             #binding-cells = <0>;
             bindings = <&kp V>, <&kp BACKSPACE>;
 
-            tapping-term-ms = <100>;
+            tapping-term-ms = <200>;
         };
 
         mesc: mesc {
@@ -95,7 +95,7 @@
             #binding-cells = <0>;
             bindings = <&kp M>, <&kp ESC>;
 
-            tapping-term-ms = <100>;
+            tapping-term-ms = <200>;
         };
 
         zdel: xdel {
@@ -104,7 +104,7 @@
             #binding-cells = <0>;
             bindings = <&kp Z>, <&kp DEL>;
 
-            tapping-term-ms = <100>;
+            tapping-term-ms = <200>;
         };
     };
 
