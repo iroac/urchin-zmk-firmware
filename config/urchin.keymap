@@ -20,7 +20,7 @@
 
 &mmv {
     time-to-max-speed-ms = <40>;
-    acceleration-exponent = <1>;
+    acceleration-exponent = <0>;
     delay-ms = <10>;
 };
 
@@ -86,7 +86,7 @@
             #binding-cells = <0>;
             bindings = <&kp V>, <&kp BACKSPACE>;
 
-            tapping-term-ms = <200>;
+            tapping-term-ms = <100>;
         };
 
         mesc: mesc {
@@ -95,7 +95,7 @@
             #binding-cells = <0>;
             bindings = <&kp M>, <&kp ESC>;
 
-            tapping-term-ms = <200>;
+            tapping-term-ms = <100>;
         };
 
         xdel: xdel {
@@ -104,7 +104,7 @@
             #binding-cells = <0>;
             bindings = <&kp X>, <&kp DEL>;
 
-            tapping-term-ms = <200>;
+            tapping-term-ms = <100>;
         };
     };
 
