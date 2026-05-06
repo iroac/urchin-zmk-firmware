@@ -120,19 +120,19 @@
 
         home {
             bindings = <
-&kp Q            &kp W            &kp E                &kp R              &kp T               &kp Y                      &kp U               &kp I                 &td MINUS O       &td SINGLE_QUOTE P
-&hml LEFT_GUI A  &hml LEFT_ALT S  &hml LEFT_CONTROL D  &hml LEFT_SHIFT F  &kp G               &kp H                      &hmr RIGHT_SHIFT J  &hmr RIGHT_CONTROL K  &hmr RIGHT_ALT L  &hmr RIGHT_WIN SEMICOLON
-&kp Z            &kp X            &kp C                &kp V              &kp B               &kp N                      &kp M               &td UNDERSCORE COMMA  &td EXCL DOT      &td DOUBLE_QUOTES SLASH
-                                                       &kp SPACE          &td LEFT_SHIFT TAB  &td RIGHT_SHIFT BACKSPACE  &to 1
+&kp Q            &kp W            &kp E                &kp R              &kp T               &kp Y          &kp U               &kp I                 &td MINUS O       &td SINGLE_QUOTE P
+&hml LEFT_GUI A  &hml LEFT_ALT S  &hml LEFT_CONTROL D  &hml LEFT_SHIFT F  &kp G               &kp H          &hmr RIGHT_SHIFT J  &hmr RIGHT_CONTROL K  &hmr RIGHT_ALT L  &hmr RIGHT_WIN SEMICOLON
+&kp Z            &kp X            &kp C                &kp V              &kp B               &kp N          &kp M               &td UNDERSCORE COMMA  &td EXCL DOT      &td DOUBLE_QUOTES SLASH
+                                                       &kp SPACE          &td LEFT_SHIFT TAB  &kp BACKSPACE  &to 1
             >;
         };
 
         nav {
             bindings = <
-&none         &none           &msc SCRL_LEFT    &msc SCRL_RIGHT  &none               &kp K_AGAIN                &mkp LCLK  &mmv MOVE_DOWN  &mmv MOVE_UP  &mkp RCLK
-&kp LEFT_WIN  &kp LEFT_ALT    &kp LEFT_CONTROL  &kp LEFT_SHIFT   &kp DEL             &kp CAPS                   &kp LEFT   &kp DOWN        &kp UP        &kp RIGHT
-&msc SCRL_UP  &msc SCRL_DOWN  &mmv MOVE_LEFT    &mmv MOVE_RIGHT  &none               &kp INSERT                 &kp HOME   &kp PAGE_DOWN   &kp PAGE_UP   &kp END
-                                                &to 0            &td LEFT_SHIFT TAB  &td RIGHT_SHIFT BACKSPACE  &to 2
+&none         &none           &msc SCRL_LEFT    &msc SCRL_RIGHT  &none               &kp K_AGAIN    &mkp LCLK  &mmv MOVE_DOWN  &mmv MOVE_UP  &mkp RCLK
+&kp LEFT_WIN  &kp LEFT_ALT    &kp LEFT_CONTROL  &kp LEFT_SHIFT   &kp DEL             &kp CAPS       &kp LEFT   &kp DOWN        &kp UP        &kp RIGHT
+&msc SCRL_UP  &msc SCRL_DOWN  &mmv MOVE_LEFT    &mmv MOVE_RIGHT  &none               &kp INSERT     &kp HOME   &kp PAGE_DOWN   &kp PAGE_UP   &kp END
+                                                &to 0            &td LEFT_SHIFT TAB  &kt BACKSPACE  &to 2
             >;
         };
 
@@ -147,10 +147,10 @@
 
         configNum {
             bindings = <
-&kp C_VOLUME_UP    &kp N7        &kp NUMBER_8  &kp NUMBER_9  &kp LS(MINUS)                 &kp F12                   &kp F7  &kp F8  &kp F9  &kp C_PLAY
-&kp C_VOLUME_DOWN  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp LS(EQUAL)                 &kp F11                   &kp F4  &kp F5  &kp F6  &kp C_MUTE
-&to 2              &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp DOT                       &kp F10                   &kp F1  &kp F2  &kp F3  &kp C_PAUSE
-                                               &to 0         &td LEFT_CONTROL KP_NUMBER_0  &td LEFT_SHIFT BACKSPACE  &to 4
+&kp C_VOLUME_UP    &kp N7        &kp NUMBER_8  &kp NUMBER_9  &kp MINUS                   &kp F12        &kp F7  &kp F8  &kp F9  &kp C_PLAY
+&kp C_VOLUME_DOWN  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp EQUAL                   &kp F11        &kp F4  &kp F5  &kp F6  &kp C_MUTE
+&to 2              &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp DOT                     &kp F10        &kp F1  &kp F2  &kp F3  &kp C_PAUSE
+                                               &to 0         &td LEFT_SHIFT KP_NUMBER_0  &kp BACKSPACE  &to 4
             >;
         };
 
