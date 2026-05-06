@@ -147,8 +147,8 @@
 
         configNum {
             bindings = <
-&kp C_VOLUME_UP    &kp N7        &kp NUMBER_8  &kp NUMBER_9  &kp LS(MINUS)                 &kp F12                   &kp F7  &kp F8  &kp F9  &kp K_PLAY_PAUSE
-&kp C_VOLUME_DOWN  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp LS(EQUAL)                 &kp F11                   &kp F4  &kp F5  &kp F6  &kp K_MUTE
+&kp C_VOLUME_UP    &kp N7        &kp NUMBER_8  &kp NUMBER_9  &kp LS(MINUS)                 &kp F12                   &kp F7  &kp F8  &kp F9  &kp C_PLAY
+&kp C_VOLUME_DOWN  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp LS(EQUAL)                 &kp F11                   &kp F4  &kp F5  &kp F6  &kp C_MUTE
 &to 2              &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp DOT                       &kp F10                   &kp F1  &kp F2  &kp F3  &kp C_PAUSE
                                                &to 0         &td LEFT_CONTROL KP_NUMBER_0  &td LEFT_SHIFT BACKSPACE  &to 4
             >;
