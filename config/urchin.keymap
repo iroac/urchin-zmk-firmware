@@ -6,7 +6,7 @@
 
 #include <dt-bindings/zmk/mouse.h>
 
-#define ZMK_POINTING_DEFAULT_MOVE_VAL 5000
+#define ZMK_POINTING_DEFAULT_MOVE_VAL 1000
 
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
