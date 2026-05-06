@@ -115,7 +115,7 @@
             bindings = <
 &kp Q            &kp W            &kp E                &kp R              &kp T               &kp Y      &kp U               &kp I                 &td MINUS O       &kp P
 &hml LEFT_GUI A  &hml LEFT_ALT S  &hml LEFT_CONTROL D  &hml LEFT_SHIFT F  &kp G               &kp H      &hmr RIGHT_SHIFT J  &hmr RIGHT_CONTROL K  &hmr RIGHT_ALT L  &hmr RIGHT_WIN SEMICOLON
-&kp Z            &xdel            &kp C                &vbs                &td BACKSPACE B     &kp N      &mesc               &td UNDERSCORE COMMA  &td EXCL DOT      &kp SLASH
+&kp Z            &xdel            &kp C                &vbs               &td BACKSPACE B     &kp N      &mesc               &td UNDERSCORE COMMA  &td EXCL DOT      &kp SLASH
                                                        &kp SPACE          &td LEFT_SHIFT TAB  &kp ENTER  &to 1
             >;
         };
@@ -134,7 +134,7 @@
 &kp ESC    &kp AMPERSAND    &kp ASTERISK  &kp PLUS   &kp SINGLE_QUOTE      &kp LEFT_BRACE        &kp LS(AMPERSAND)  &kp LS(ASTERISK)  &kp RIGHT_BRACE        &kp DELETE
 &kp TAB    &kp DOLLAR       &kp PERCENT   &kp EQUAL  &kp DOUBLE_QUOTES     &kp LEFT_BRACKET      &kp BACKSLASH      &kp SLASH         &kp RIGHT_BRACKET      &kp ENTER
 &kp TILDE  &kp EXCLAMATION  &kp AT_SIGN   &kp HASH   &kp GRAVE             &kp LEFT_PARENTHESIS  &kp MINUS          &kp PIPE          &kp RIGHT_PARENTHESIS  &to 3
-                                          &to 0      &td LSHIFT BACKSPACE  &sk RALT              &to 1
+                                          &to 0      &td LSHIFT BACKSPACE  &kp RALT              &to 1
             >;
         };
 
@@ -143,7 +143,7 @@
 &kp C_VOLUME_UP    &kp N7        &kp NUMBER_8  &kp NUMBER_9  &kp LS(MINUS)             &kp F12   &kp F7  &kp F8  &kp F9  &kp C_PLAY
 &kp C_VOLUME_DOWN  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp LS(EQUAL)             &kp F11   &kp F4  &kp F5  &kp F6  &kp C_MUTE
 &to 2              &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp DOT                   &kp F10   &kp F1  &kp F2  &kp F3  &kp C_PAUSE
-                                               &to 0         &td LEFT_SHIFT BACKSPACE  &sk RALT  &to 4
+                                               &to 0         &td LEFT_SHIFT BACKSPACE  &kp RALT  &to 4
             >;
         };
 
