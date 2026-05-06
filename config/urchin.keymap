@@ -71,6 +71,17 @@
             label = "DOUBLETAP";
             #binding-cells = <0>;
             bindings = <&kp V>, <&kp ESC>;
+
+            tapping-term-ms = <100>;
+        };
+
+        mbk: mbk {
+            compatible = "zmk,behavior-tap-dance";
+            label = "MBK";
+            #binding-cells = <0>;
+            bindings = <&kp M>, <&kp BACKSPACE>;
+
+            tapping-term-ms = <100>;
         };
     };
 
@@ -81,17 +92,17 @@
             bindings = <
 &kp Q            &kp W            &kp E                &kp R              &kp T               &kp Y      &kp U               &kp I                 &td MINUS O       &kp P
 &hml LEFT_GUI A  &hml LEFT_ALT S  &hml LEFT_CONTROL D  &hml LEFT_SHIFT F  &kp G               &kp H      &hmr RIGHT_SHIFT J  &hmr RIGHT_CONTROL K  &hmr RIGHT_ALT L  &hmr RIGHT_WIN SEMICOLON
-&kp Z            &kp X            &kp C                &kp V              &kp B               &kp N      &kp M               &td UNDERSCORE COMMA  &td EXCL DOT      &kp SLASH
+&kp Z            &kp X            &kp C                &tb2               &kp B               &kp N      &mbk                &td UNDERSCORE COMMA  &td EXCL DOT      &kp SLASH
                                                        &kp SPACE          &td LEFT_SHIFT TAB  &kp ENTER  &to 1
             >;
         };
 
         nav {
             bindings = <
-&trans             &trans           &trans          &trans           &trans                    &kp K_AGAIN       &mkp LCLK       &mmv MOVE_DOWN  &mmv MOVE_UP  &mkp RCLK
-&kp K_SCROLL_DOWN  &kp K_SCROLL_UP  &mmv MOVE_LEFT  &mmv MOVE_RIGHT  &kp DEL                   &kp CAPS          &kp LEFT_ARROW  &kp DOWN        &kp UP_ARROW  &kp RIGHT
-&trans             &trans           &trans          &trans           &trans                    &kp INSERT        &kp HOME        &kp PAGE_DOWN   &kt PAGE_UP   &kp END
-                                                    &to 0            &td LEFT_SHIFT BACKSPACE  &sk LEFT_CONTROL  &to 2
+&trans          &trans        &msc SCRL_LEFT    &msc SCRL_RIGHT  &trans                    &kp K_AGAIN       &mkp LCLK       &mmv MOVE_DOWN  &mmv MOVE_UP  &mkp RCLK
+&kt LEFT_WIN    &kt LEFT_ALT  &kt LEFT_CONTROL  &kt LEFT_SHIFT   &kp DEL                   &kp CAPS          &kp LEFT_ARROW  &kp DOWN        &kp UP_ARROW  &kp RIGHT
+&msc SCRL_DOWN  &msc SCRL_UP  &mmv MOVE_LEFT    &mmv MOVE_RIGHT  &trans                    &kp INSERT        &kp HOME        &kp PAGE_DOWN   &kt PAGE_UP   &kp END
+                                                &to 0            &td LEFT_SHIFT BACKSPACE  &sk LEFT_CONTROL  &to 2
             >;
         };
 
