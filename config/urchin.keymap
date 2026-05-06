@@ -95,19 +95,17 @@
 
         combo_space {
             bindings = <&kp SPACE>;
-            key-positions = <31 30>;
+            key-positions = <31 20>;
         };
 
         combo_enter {
             bindings = <&kp ENTER>;
-            key-positions = <32 33>;
-            layers = <0>;
+            key-positions = <32 29>;
         };
 
         combo_delete {
             bindings = <&kp DELETE>;
             key-positions = <8 7>;
-            layers = <0 1>;
         };
 
         combo_esc {
@@ -130,9 +128,9 @@
 
         nav {
             bindings = <
-&none         &none           &msc SCRL_LEFT    &msc SCRL_RIGHT  &none               &kp K_AGAIN                &mkp LCLK       &mmv MOVE_DOWN  &mmv MOVE_UP  &mkp RCLK
-&kp LEFT_WIN  &kp LEFT_ALT    &kp LEFT_CONTROL  &kp LEFT_SHIFT   &kp DEL             &kp CAPS                   &kp LEFT_ARROW  &kp DOWN        &kp UP_ARROW  &kp RIGHT
-&msc SCRL_UP  &msc SCRL_DOWN  &mmv MOVE_LEFT    &mmv MOVE_RIGHT  &none               &kp INSERT                 &kp HOME        &kp PAGE_DOWN   &kp PAGE_UP   &kp END
+&none         &none           &msc SCRL_LEFT    &msc SCRL_RIGHT  &none               &kp K_AGAIN                &mkp LCLK  &mmv MOVE_DOWN  &mmv MOVE_UP  &mkp RCLK
+&kp LEFT_WIN  &kp LEFT_ALT    &kp LEFT_CONTROL  &kp LEFT_SHIFT   &kp DEL             &kp CAPS                   &kp LEFT   &kp DOWN        &kp UP        &kp RIGHT
+&msc SCRL_UP  &msc SCRL_DOWN  &mmv MOVE_LEFT    &mmv MOVE_RIGHT  &none               &kp INSERT                 &kp HOME   &kp PAGE_DOWN   &kp PAGE_UP   &kp END
                                                 &to 0            &td LEFT_SHIFT TAB  &td RIGHT_SHIFT BACKSPACE  &to 2
             >;
         };
@@ -161,6 +159,15 @@
 &none  &none  &none  &bt BT_NXT  &none  &none  &none  &none  &none  &none
 &none  &none  &none  &bt BT_PRV  &none  &none  &none  &none  &none  &none
                      &to 0       &none  &none  &none
+            >;
+        };
+
+        layer_5 {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+                        &trans  &trans  &trans  &trans
             >;
         };
     };
