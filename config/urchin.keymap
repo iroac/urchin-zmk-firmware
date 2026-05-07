@@ -59,7 +59,7 @@
             #binding-cells = <0>;
             bindings = <&kp X>, <&kp K_APP>;
 
-            tapping-term-ms = <200>;
+            tapping-term-ms = <300>;
         };
 
         td_slash_bslash: td_slash_bslash {
@@ -68,7 +68,7 @@
             #binding-cells = <0>;
             bindings = <&kp SLASH>, <&kp NON_US_BACKSLASH>;
 
-            tapping-term-ms = <200>;
+            tapping-term-ms = <300>;
         };
 
         td_play_stop: td_play_stop {
@@ -77,7 +77,7 @@
             #binding-cells = <0>;
             bindings = <&kp C_PLAY>, <&kp C_STOP>;
 
-            tapping-term-ms = <200>;
+            tapping-term-ms = <300>;
         };
 
         td_zero_minus: td_zero_minus {
@@ -86,7 +86,7 @@
             #binding-cells = <0>;
             bindings = <&kp NUMBER_0>, <&kp MINUS>;
 
-            tapping-term-ms = <200>;
+            tapping-term-ms = <300>;
         };
 
         td_paren_underscore: td_paren_underscore {
@@ -95,7 +95,7 @@
             #binding-cells = <0>;
             bindings = <&kp LS(NUMBER_0)>, <&kp LS(MINUS)>;
 
-            tapping-term-ms = <200>;
+            tapping-term-ms = <300>;
         };
     };
 
