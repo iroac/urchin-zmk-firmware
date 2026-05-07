@@ -58,6 +58,7 @@
             label = "TD_X_APP";
             #binding-cells = <0>;
             bindings = <&kp X>, <&kp K_APP>;
+
             tapping-term-ms = <200>;
         };
 
@@ -66,6 +67,7 @@
             label = "TD_SLSH_BSLS";
             #binding-cells = <0>;
             bindings = <&kp SLASH>, <&kp NON_US_BACKSLASH>;
+
             tapping-term-ms = <200>;
         };
 
@@ -74,6 +76,7 @@
             label = "TD_PLAY_STOP";
             #binding-cells = <0>;
             bindings = <&kp C_PLAY>, <&kp C_STOP>;
+
             tapping-term-ms = <200>;
         };
 
@@ -82,6 +85,7 @@
             label = "TD_ZERO_MINUS";
             #binding-cells = <0>;
             bindings = <&kp NUMBER_0>, <&kp MINUS>;
+
             tapping-term-ms = <200>;
         };
 
@@ -90,6 +94,7 @@
             label = "TD_PAREN_UNDERSCORE";
             #binding-cells = <0>;
             bindings = <&kp LS(NUMBER_0)>, <&kp LS(MINUS)>;
+
             tapping-term-ms = <200>;
         };
     };
@@ -118,13 +123,13 @@
         compatible = "zmk,combos";
 
         combo_tab {
-            bindings = <&m_tab>;
-            key-positions = <0 1>;
+            bindings = <&kp ESCAPE>;
+            key-positions = <1 2>;
         };
 
         combo_quote {
             bindings = <&m_quote>;
-            key-positions = <8 9>;
+            key-positions = <8 7>;
         };
 
         combo_delete {
@@ -143,55 +148,55 @@
 
         base {
             bindings = <
-&kp Q            &kp W            &kp E                &kp R              &kp T               &kp Y          &kp U               &kp I                 &kp O              &kp P
-&hml LEFT_GUI A  &hml LEFT_ALT S  &hml LEFT_CONTROL D  &hml LEFT_SHIFT F  &kp G               &kp H          &hmr RIGHT_SHIFT J  &hmr RIGHT_CONTROL K  &hmr RIGHT_ALT L  &hmr RIGHT_WIN SEMICOLON
-&kp Z            &td_x_app        &kp C                &kp V              &kp B               &kp N          &kp M               &kp COMMA             &mt RIGHT_ALT DOT  &td_slash_bslash
-                                                       &lt 2 ESCAPE        &lt 1 SPACE           &lt 3 BACKSPACE  &lt 4 ENTER
+&kp Q            &kp W            &kp E                &kp R              &kp T      &kp Y        &kp U               &kp I                 &kp O              &kp P
+&hml LEFT_GUI A  &hml LEFT_ALT S  &hml LEFT_CONTROL D  &hml LEFT_SHIFT F  &kp G      &kp H        &hmr RIGHT_SHIFT J  &hmr RIGHT_CONTROL K  &hmr RIGHT_ALT L   &hmr RIGHT_WIN SEMICOLON
+&kp Z            &td_x_app        &kp C                &kp V              &kp B      &kp N        &kp M               &kp COMMA             &mt RIGHT_ALT DOT  &td_slash_bslash
+                                                       &lt 2 SPACE        &lt 1 TAB  &lt 3 ENTER  &lt 4 BACKSPACE
             >;
         };
 
         nav {
             bindings = <
-&trans       &trans          &msc SCRL_LEFT    &msc SCRL_RIGHT  &trans              &kp K_AGAIN    &mkp LCLK  &mmv MOVE_DOWN  &mmv MOVE_UP  &mkp RCLK
-&kp LEFT_GUI &kp LEFT_ALT    &kp LEFT_CONTROL  &kp LEFT_SHIFT   &trans              &kp CAPS       &kp LEFT   &kp DOWN        &kp UP        &kp RIGHT
-&msc SCRL_UP &td_x_app       &msc SCRL_DOWN    &mmv MOVE_LEFT   &mmv MOVE_RIGHT     &kp INSERT     &kp HOME   &kp PAGE_DOWN   &kp PAGE_UP   &kp END
-                                               &trans           &trans              &kp BACKSPACE  &kp ENTER
+&none         &none         &msc SCRL_LEFT    &msc SCRL_RIGHT  &none            &kp K_AGAIN    &mkp LCLK  &mmv MOVE_DOWN  &mmv MOVE_UP  &mkp RCLK
+&kp LEFT_GUI  &kp LEFT_ALT  &kp LEFT_CONTROL  &kp LEFT_SHIFT   &none            &kp CAPS       &kp LEFT   &kp DOWN        &kp UP        &kp RIGHT
+&msc SCRL_UP  &td_x_app     &msc SCRL_DOWN    &mmv MOVE_LEFT   &mmv MOVE_RIGHT  &kp INSERT     &kp HOME   &kp PAGE_DOWN   &kp PAGE_UP   &kp END
+                                              &none            &none            &kp BACKSPACE  &kp ENTER
             >;
         };
 
         media {
             bindings = <
-&trans       &trans        &trans        &trans        &trans           &bt BT_CLR    &bt BT_NXT    &bt BT_PRV    &bt BT_SEL 0  &bt BT_SEL 1
-&kp LEFT_GUI &kp LEFT_ALT  &kp LEFT_CONTROL &kp LEFT_SHIFT &trans           &trans        &kp C_PREV    &kp C_VOLUME_DOWN &kp C_VOLUME_UP &kp C_NEXT
-&trans       &kp RIGHT_ALT &trans        &trans        &trans           &trans        &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &bt BT_SEL 5
-                                               &trans   &trans           &kp C_MUTE   &td_play_stop
+&none         &none          &none             &none           &none  &bt BT_CLR  &bt BT_NXT     &bt BT_PRV         &bt BT_SEL 0     &bt BT_SEL 1
+&kp LEFT_GUI  &kp LEFT_ALT   &kp LEFT_CONTROL  &kp LEFT_SHIFT  &none  &none       &kp C_PREV     &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &kp C_NEXT
+&none         &kp RIGHT_ALT  &none             &none           &none  &none       &bt BT_SEL 2   &bt BT_SEL 3       &bt BT_SEL 4     &bt BT_SEL 5
+                                               &none           &none  &kp C_MUTE  &td_play_stop
             >;
         };
 
         num {
             bindings = <
-&kp LEFT_BRACKET  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp RIGHT_BRACKET  &trans         &trans        &trans        &trans        &trans
-&kp SEMICOLON     &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp EQUAL          &trans         &kp LEFT_SHIFT &kp LEFT_CONTROL  &kp LEFT_ALT   &kp LEFT_GUI
-&kp GRAVE         &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp BACKSLASH      &trans         &trans        &trans        &trans        &trans
-                                               &kp DOT        &td_zero_minus   &trans        &trans
+&kp LEFT_BRACKET  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp RIGHT_BRACKET  &none  &none           &none             &none         &none
+&kp SEMICOLON     &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp EQUAL          &none  &kp LEFT_SHIFT  &kp LEFT_CONTROL  &kp LEFT_ALT  &kp LEFT_GUI
+&kp GRAVE         &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp BACKSLASH      &none  &none           &none             &none         &none
+                                              &kp DOT       &td_zero_minus     &none  &none
             >;
         };
 
         sym {
             bindings = <
-&kp LS(LEFT_BRACKET)  &kp LS(NUMBER_7)  &kp LS(NUMBER_8)  &kp LS(NUMBER_9)  &kp LS(RIGHT_BRACKET)  &trans         &trans        &trans        &trans        &trans
-&kp LS(SEMICOLON)     &kp LS(NUMBER_4)  &kp LS(NUMBER_5)  &kp LS(NUMBER_6)  &kp LS(EQUAL)          &trans         &kp LEFT_SHIFT &kp LEFT_CONTROL  &kp LEFT_ALT   &kp LEFT_GUI
-&kp LS(GRAVE)         &kp LS(NUMBER_1)  &kp LS(NUMBER_2)  &kp LS(NUMBER_3)  &kp LS(BACKSLASH)      &trans         &trans        &trans        &trans        &trans
-                                                   &kp LS(NUMBER_9)   &td_paren_underscore  &trans  &trans
+&kp LS(LEFT_BRACKET)  &kp LS(NUMBER_7)  &kp LS(NUMBER_8)  &kp LS(NUMBER_9)  &kp LS(RIGHT_BRACKET)  &none  &none           &none             &none         &none
+&kp LS(SEMICOLON)     &kp LS(NUMBER_4)  &kp LS(NUMBER_5)  &kp LS(NUMBER_6)  &kp LS(EQUAL)          &none  &kp LEFT_SHIFT  &kp LEFT_CONTROL  &kp LEFT_ALT  &kp LEFT_GUI
+&kp LS(GRAVE)         &kp LS(NUMBER_1)  &kp LS(NUMBER_2)  &kp LS(NUMBER_3)  &kp LS(BACKSLASH)      &none  &none           &none             &none         &none
+                                                          &kp LS(NUMBER_9)  &td_paren_underscore   &none  &none
             >;
         };
 
         fn {
             bindings = <
-&kp F12   &kp F7   &kp F8   &kp F9   &kp PRINTSCREEN  &trans  &trans        &trans        &trans        &trans
-&kp F11   &kp F4   &kp F5   &kp F6   &kp SCROLLLOCK  &trans  &kp LEFT_SHIFT &kp LEFT_CONTROL  &kp LEFT_ALT   &kp LEFT_GUI
-&kp F10   &kp F1   &kp F2   &kp F3   &kp PAUSE_BREAK  &trans  &trans        &trans        &trans        &trans
-                               &kp K_APP    &kp SPACE  &trans  &trans
+&kp F12  &kp F7  &kp F8  &kp F9     &kp PRINTSCREEN  &none  &none           &none             &none         &none
+&kp F11  &kp F4  &kp F5  &kp F6     &kp SCROLLLOCK   &none  &kp LEFT_SHIFT  &kp LEFT_CONTROL  &kp LEFT_ALT  &kp LEFT_GUI
+&kp F10  &kp F1  &kp F2  &kp F3     &kp PAUSE_BREAK  &none  &none           &none             &none         &none
+                         &kp K_APP  &kp SPACE        &none  &none
             >;
         };
     };
