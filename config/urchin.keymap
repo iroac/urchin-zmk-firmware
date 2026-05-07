@@ -157,10 +157,10 @@
 
         nav {
             bindings = <
-&none         &none         &msc SCRL_LEFT    &msc SCRL_RIGHT  &none            &kp K_AGAIN    &mkp LCLK  &mmv MOVE_DOWN  &mmv MOVE_UP  &mkp RCLK
-&kp LEFT_GUI  &kp LEFT_ALT  &kp LEFT_CONTROL  &kp LEFT_SHIFT   &none            &kp CAPS       &kp LEFT   &kp DOWN        &kp UP        &kp RIGHT
-&msc SCRL_UP  &td_x_app     &msc SCRL_DOWN    &mmv MOVE_LEFT   &mmv MOVE_RIGHT  &kp INSERT     &kp HOME   &kp PAGE_DOWN   &kp PAGE_UP   &kp END
-                                              &none            &none            &kp BACKSPACE  &kp ENTER
+&none         &none           &msc SCRL_LEFT    &msc SCRL_RIGHT  &none  &kp K_AGAIN    &mkp LCLK  &mmv MOVE_DOWN  &mmv MOVE_UP  &mkp RCLK
+&kp LEFT_GUI  &kp LEFT_ALT    &kp LEFT_CONTROL  &kp LEFT_SHIFT   &none  &kp CAPS       &kp LEFT   &kp DOWN        &kp UP        &kp RIGHT
+&msc SCRL_UP  &msc SCRL_DOWN  &mmv MOVE_LEFT    &mmv MOVE_RIGHT  &none  &kp INSERT     &kp HOME   &kp PAGE_DOWN   &kp PAGE_UP   &kp END
+                                                &none            &none  &kp BACKSPACE  &kp ENTER
             >;
         };
 
