@@ -135,7 +135,7 @@
 
         combo_delete {
             bindings = <&m_delete>;
-            key-positions = <31 32>;
+            key-positions = <30 33>;
         };
 
         combo_fn {
