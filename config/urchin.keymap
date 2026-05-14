@@ -6,8 +6,8 @@
 
 #include <dt-bindings/zmk/mouse.h>
 
-#define ZMK_POINTING_DEFAULT_MOVE_VAL 2000
-#define ZMK_POINTING_DEFAULT_SCRL_VAL 20
+#define ZMK_POINTING_DEFAULT_MOVE_VAL 1500
+#define ZMK_POINTING_DEFAULT_SCRL_VAL 30
 
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
@@ -22,7 +22,7 @@
 
 &mmv {
     time-to-max-speed-ms = <20>;
-    acceleration-exponent = <1>;
+    acceleration-exponent = <0>;
     delay-ms = <0>;
 };
 
@@ -60,7 +60,7 @@
             #binding-cells = <0>;
             bindings = <&kp X>, <&kp K_APP>;
 
-            tapping-term-ms = <300>;
+            tapping-term-ms = <170>;
         };
 
         td_slash_bslash: td_slash_bslash {
@@ -69,7 +69,7 @@
             #binding-cells = <0>;
             bindings = <&kp SLASH>, <&kp NON_US_BACKSLASH>;
 
-            tapping-term-ms = <300>;
+            tapping-term-ms = <170>;
         };
 
         td_play_stop: td_play_stop {
@@ -78,7 +78,7 @@
             #binding-cells = <0>;
             bindings = <&kp C_PLAY>, <&kp C_STOP>;
 
-            tapping-term-ms = <300>;
+            tapping-term-ms = <170>;
         };
 
         td_zero_minus: td_zero_minus {
@@ -87,7 +87,7 @@
             #binding-cells = <0>;
             bindings = <&kp NUMBER_0>, <&kp MINUS>;
 
-            tapping-term-ms = <300>;
+            tapping-term-ms = <170>;
         };
 
         td_paren_underscore: td_paren_underscore {
@@ -96,7 +96,7 @@
             #binding-cells = <0>;
             bindings = <&kp LS(NUMBER_0)>, <&kp LS(MINUS)>;
 
-            tapping-term-ms = <300>;
+            tapping-term-ms = <170>;
         };
     };
 
