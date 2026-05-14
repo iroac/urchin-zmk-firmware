@@ -140,7 +140,7 @@
 
         combo_fn {
             bindings = <&mo 5>;
-            key-positions = <32 7>;
+            key-positions = <7 33>;
         };
     };
 
