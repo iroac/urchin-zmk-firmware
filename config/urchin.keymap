@@ -6,7 +6,7 @@
 
 #include <dt-bindings/zmk/mouse.h>
 
-#define ZMK_POINTING_DEFAULT_MOVE_VAL 1500
+#define ZMK_POINTING_DEFAULT_MOVE_VAL 600
 #define ZMK_POINTING_DEFAULT_SCRL_VAL 30
 
 #include <behaviors.dtsi>
@@ -35,6 +35,7 @@
             label = "HOMEROW_MODS_LEFT";
             #binding-cells = <2>;
             flavor = "balanced";
+            hold-trigger-on-release;
             tapping-term-ms = <150>;
             quick-tap-ms = <90>;
             bindings = <&kp>, <&kp>;
@@ -47,6 +48,7 @@
             label = "HOMEROW_MODS_RIGHT";
             #binding-cells = <2>;
             flavor = "balanced";
+            hold-trigger-on-release;
             tapping-term-ms = <150>;
             quick-tap-ms = <90>;
             bindings = <&kp>, <&kp>;
