@@ -21,8 +21,8 @@
 };
 
 &mmv {
-    time-to-max-speed-ms = <50>;
-    acceleration-exponent = <1>;
+    time-to-max-speed-ms = <150>;
+    acceleration-exponent = <2>;
     delay-ms = <10>;
 };
 
@@ -41,8 +41,11 @@
             bindings = <&kp>, <&kp>;
 
             // right hand + right thumbs, plus Z/X/C/V (20/21/22/23) so
-            // same-hand Ctrl+Z/X/C/V still resolve as a hold
-            hold-trigger-key-positions = <5 6 7 8 9 15 16 17 18 19 20 21 22 23 25 26 27 28 29 32 33>;
+            // same-hand Ctrl+Z/X/C/V still resolve as a hold, plus the
+            // other left-hand mods (10/11/12/13) and left thumbs (30/31)
+            // so same-hand mod stacking (Ctrl+Shift) and mod+Tab/Space
+            // (Alt+Tab) resolve quickly too
+            hold-trigger-key-positions = <5 6 7 8 9 10 11 12 13 15 16 17 18 19 20 21 22 23 25 26 27 28 29 30 31 32 33>;
         };
 
         hmr: home_row_mod_right {
@@ -55,7 +58,10 @@
             quick-tap-ms = <90>;
             bindings = <&kp>, <&kp>;
 
-            hold-trigger-key-positions = <0 1 2 3 4 10 11 12 13 14 20 21 22 23 24 30 31>;
+            // left hand + left thumbs, plus the other right-hand mods
+            // (16/17/18/19) and right thumbs (32/33) so same-hand mod
+            // stacking and mod+Enter/Backspace resolve quickly too
+            hold-trigger-key-positions = <0 1 2 3 4 10 11 12 13 14 16 17 18 19 20 21 22 23 24 30 31 32 33>;
         };
 
         td_x_app: td_x_app {
@@ -64,7 +70,7 @@
             #binding-cells = <0>;
             bindings = <&kp X>, <&kp K_APP>;
 
-            tapping-term-ms = <300>;
+            tapping-term-ms = <175>;
         };
 
         td_slash_bslash: td_slash_bslash {
@@ -73,7 +79,7 @@
             #binding-cells = <0>;
             bindings = <&kp SLASH>, <&kp NON_US_BACKSLASH>;
 
-            tapping-term-ms = <300>;
+            tapping-term-ms = <175>;
         };
 
         td_play_stop: td_play_stop {
@@ -91,7 +97,7 @@
             #binding-cells = <0>;
             bindings = <&kp NUMBER_0>, <&kp MINUS>;
 
-            tapping-term-ms = <300>;
+            tapping-term-ms = <175>;
         };
 
         td_paren_underscore: td_paren_underscore {
@@ -100,7 +106,7 @@
             #binding-cells = <0>;
             bindings = <&kp LS(NUMBER_0)>, <&kp LS(MINUS)>;
 
-            tapping-term-ms = <300>;
+            tapping-term-ms = <175>;
         };
     };
 
