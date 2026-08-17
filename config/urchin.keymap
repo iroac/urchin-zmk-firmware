@@ -21,7 +21,7 @@
 };
 
 &mmv {
-    time-to-max-speed-ms = <250>;
+    time-to-max-speed-ms = <200>;
     acceleration-exponent = <2>;
     delay-ms = <10>;
 };
@@ -97,7 +97,7 @@
             #binding-cells = <0>;
             bindings = <&kp NUMBER_0>, <&kp MINUS>;
 
-            tapping-term-ms = <175>;
+            tapping-term-ms = <300>;
         };
 
         td_paren_underscore: td_paren_underscore {
@@ -106,7 +106,7 @@
             #binding-cells = <0>;
             bindings = <&kp LS(NUMBER_0)>, <&kp LS(MINUS)>;
 
-            tapping-term-ms = <175>;
+            tapping-term-ms = <300>;
         };
     };
 
