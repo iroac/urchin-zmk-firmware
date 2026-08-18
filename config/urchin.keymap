@@ -21,7 +21,7 @@
 };
 
 &mmv {
-    time-to-max-speed-ms = <50>;
+    time-to-max-speed-ms = <150>;
     acceleration-exponent = <2>;
     delay-ms = <10>;
 };
