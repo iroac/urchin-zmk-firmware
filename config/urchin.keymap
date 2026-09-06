@@ -110,6 +110,15 @@
 
             tapping-term-ms = <300>;
         };
+        
+        td_gamer: td_gamer {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TD_GAMER";
+            #binding-cells = <0>;
+            bindings = <&none>, <&tog 6>;
+
+            tapping-term-ms = <250>;
+        };
     };
 
     macros {
